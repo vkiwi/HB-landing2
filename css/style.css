@@ -1,7 +1,12 @@
+body {
+  margin: 0;
+}
+
 .welcome {
   width: 100%;
   height: 990px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Foreground.png");
+  background-size: 100%;
 }
 
 .welcome:after {
@@ -20,7 +25,7 @@
   display: inline-block;
   position: relative;
   top: 87.2%;
-  left: 49.2%;
+  left: 49.53%;
 }
 
 .head {
@@ -31,6 +36,29 @@
   top: 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.head__buttons {
+  text-transform: uppercase;
+  width: 220px;
+  height: 55px;
+  color: white;
+  border-radius: 4px;
+}
+
+.head__buttons:hover {
+  cursor: pointer;
+}
+
+.head__button1 {
+  background-color: #e74c3c;
+  margin-right: 30px;
+  border: none;
+}
+
+.head__button2 {
+  background: transparent;
+  border: 1px solid white;
 }
 
 .logo {
@@ -55,10 +83,14 @@
 
 .container {
   position: absolute;
-  border: 2px solid red;
   width: 1170px;
   left: 50%;
   margin-left: -585px;
+}
+
+.containerButtons {
+  bottom: -31%;
+  text-align: center;
 }
 
 .decoration {
@@ -110,5 +142,33 @@
   max-width: 568px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.owl-prev > span, .owl-next > span {
+  display: none;
+}
+
+.owl-prev {
+  width: 45px;
+  height: 45px;
+  background: url(../images/left.png) !important;
+  position: absolute;
+  left: -25%;
+}
+
+.owl-next {
+  width: 45px;
+  height: 45px;
+  background: url(../images/right.png) !important;
+  position: absolute;
+  right: -25%;
+}
+
+.owl-nav {
+  margin-top: -13% !important;
+}
+
+.owl-dots {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
