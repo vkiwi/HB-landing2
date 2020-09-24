@@ -89,7 +89,7 @@ body {
 }
 
 .containerButtons {
-  bottom: -31%;
+  top: 750px;
   text-align: center;
 }
 
@@ -122,6 +122,82 @@ body {
   position: relative;
   left: 21px;
   top: 4px;
+}
+
+.realContainer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.advantages {
+  min-height: 445px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__itemName {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 20px;
+}
+
+.advantages__itemDecoration {
+  width: 45px;
+  height: 2px;
+  background-color: grey;
+  margin: 17px auto;
+}
+
+.advantages__itemText {
+  max-width: 250px;
+}
+
+.advantages__itemImage {
+  width: 70px;
+  height: 70px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.advantages__itemImage1 {
+  background: url(../images/1.png);
+}
+
+.advantages__itemImage2 {
+  background: url(../images/2.png);
+}
+
+.advantages__itemImage3 {
+  background: url(../images/3.png);
+}
+
+.advantages__itemImage4 {
+  background: url(../images/4.png);
+}
+
+.advantages__itemImage1, .advantages__itemImage2, .advantages__itemImage3, .advantages__itemImage4 {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 23px auto;
+}
+
+.advantages__itemImage:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.advantages__itemImage:hover .advantages__itemImage1 {
+  transform: rotate(-45deg);
+  left: 2px;
 }
 
 .owl-carousel {

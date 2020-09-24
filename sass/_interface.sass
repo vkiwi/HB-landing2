@@ -70,7 +70,7 @@ body
   left: 50%
   margin-left: -585px
   &Buttons
-    bottom: -31%
+    top: 750px
     text-align: center
   
 .decoration
@@ -98,3 +98,57 @@ body
     position: relative
     left: 21px
     top: 4px
+
+.realContainer
+  max-width: 1170px
+  margin: auto
+
+//блок преимущества advantages
+.advantages
+  min-height: 445px
+  background-color: white
+  display: flex
+  justify-content: space-around
+  padding-top: 120px
+  &__item
+    text-align: center
+
+  &__itemName
+    text-transform: uppercase
+    color: grey
+    font-size: 20px
+  &__itemDecoration
+    width: 45px
+    height: 2px
+    background-color: grey
+    margin: 17px auto
+  &__itemText
+    max-width: 250px
+  &__itemImage
+    width: 70px
+    height: 70px
+    border: 1px solid grey
+    margin: auto
+    margin-bottom: 30px
+    &1
+      background: url(../images/1.png)
+    &2
+      background: url(../images/2.png)
+    &3
+      background: url(../images/3.png)
+    &4
+      background: url(../images/4.png)
+    &1, &2, &3, &4
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-position: center
+      margin: 23px auto
+
+
+.advantages__itemImage:hover
+  cursor: pointer
+  transform: rotate(45deg)
+  .advantages__itemImage1
+    transform: rotate(-45deg)
+    left: 2px
