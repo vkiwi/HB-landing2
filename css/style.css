@@ -129,6 +129,20 @@ body {
   margin: auto;
 }
 
+.anchor {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: url("../images/anchor.png") no-repeat center #f4f5f9;
+  margin: auto;
+  margin-top: -30px;
+  position: absolute;
+  top: 985px;
+  left: 50%;
+  margin-left: -37.5px;
+  z-index: 1;
+}
+
 .advantages {
   min-height: 445px;
   background-color: white;
@@ -193,11 +207,21 @@ body {
 .advantages__itemImage:hover {
   cursor: pointer;
   transform: rotate(45deg);
+  border: 1px solid red;
 }
 
-.advantages__itemImage:hover .advantages__itemImage1 {
+.advantages__itemImage:hover span.advantages__itemName {
+  color: red;
+}
+
+.advantages__itemImage:hover .advantages__itemImage1, .advantages__itemImage:hover .advantages__itemImage2, .advantages__itemImage:hover .advantages__itemImage3, .advantages__itemImage:hover .advantages__itemImage4 {
   transform: rotate(-45deg);
-  left: 2px;
+  margin-left: 21px;
+  margin-top: 21px;
+}
+
+.advantages__itemImage:hover ~ .advantages__itemName {
+  color: red;
 }
 
 .owl-carousel {

@@ -104,6 +104,19 @@ body
   margin: auto
 
 //блок преимущества advantages
+.anchor
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  background: url('../images/anchor.png') no-repeat center #f4f5f9
+  margin: auto
+  margin-top: -30px
+  position: absolute
+  top: 985px
+  left: 50%
+  margin-left: -37.5px
+  z-index: 1
+
 .advantages
   min-height: 445px
   background-color: white
@@ -149,6 +162,15 @@ body
 .advantages__itemImage:hover
   cursor: pointer
   transform: rotate(45deg)
-  .advantages__itemImage1
-    transform: rotate(-45deg)
-    left: 2px
+  border: 1px solid red
+  span.advantages__itemName
+    color: red
+  .advantages__itemImage
+    &1, &2, &3, &4
+      transform: rotate(-45deg)
+      margin-left: 21px
+      margin-top: 21px
+
+.advantages__itemImage:hover~.advantages__itemName
+  color: red
+
