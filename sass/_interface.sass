@@ -1,5 +1,6 @@
 body
   margin: 0
+  box-sizing: border-box
   
 .welcome
   width: 100%
@@ -118,11 +119,12 @@ body
   z-index: 1
 
 .advantages
-  min-height: 445px
+  min-height: 325px
   background-color: white
   display: flex
   justify-content: space-around
   padding-top: 120px
+
   &__item
     text-align: center
 
@@ -174,3 +176,35 @@ body
 .advantages__itemImage:hover~.advantages__itemName
   color: red
 
+//блок our history
+.history
+  min-height: 555px
+  display: flex
+  justify-content: space-between
+  padding-top: 135px
+  &__image
+    background: url(../images/monitor.png)
+    min-width: 507px
+    height: 407px
+  &__content
+    max-width: 580px
+    margin-left: 80px
+    &Header
+      text-transform: uppercase
+      color: #6a6a6a
+      font-size: 24px
+      border-left: 6px solid #e74c3c
+      padding-left: 30px
+      margin-top: 0
+    &Text
+      line-height: 30px
+    &Button
+      margin-top: 50px
+    
+.greyLine
+  content: ''
+  display: block
+  height: 1px
+  background-color: #e6e7eb
+  width: 100vw
+  margin-left: -20vw
