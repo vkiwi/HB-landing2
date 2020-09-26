@@ -208,3 +208,54 @@ body
   background-color: #e6e7eb
   width: 100vw
   margin-left: -20vw
+
+//блок our services
+.services
+  min-height: 760px
+  display: flex
+  justify-content: space-between
+  background-color: #202020
+  &__content
+    text-align: right
+    width: 50%
+    padding-top: 75px
+    &Header
+      color: #f4f5f9
+      text-transform: uppercase
+      border-right: 6px solid #e74c3c
+      padding-right: 30px
+      font-size: 33px
+      margin-bottom: 70px
+    &Item:after
+      content: ''
+      display: inline-block
+      width: 65px
+      height: 65px
+      border-radius: 50%
+      background-color: #f4f5f9
+      position: relative
+      top: -85px
+      left: 108px
+    &Item1:after
+      background: url(../images/display.png) no-repeat center #f4f5f9
+    &Item2:after
+      background: url(../images/docs.png) no-repeat center #f4f5f9
+    &Item3:after
+      background: url(../images/camera.png) no-repeat center #f4f5f9
+    &ItemHeader
+      color: #e74c3c
+      text-transform: uppercase
+      font-size: 20px
+      margin-bottom: 23px
+      margin-top: 0px
+    &ItemText
+      color: #999999
+      max-width: 560px
+      margin-left: auto
+      line-height: 30px
+  &__image
+    width: 46%
+    background: url(../images/tablet.png)
+    background-position: right
+
+
