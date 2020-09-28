@@ -261,14 +261,13 @@ body
 
 //блок recent works
 .recentWorks
-  min-height: 1330px
+  min-height: 1189px
   text-align: center
   padding-top: 140px
   &__header
     text-transform: uppercase
     color: #6a6a6a
     font-size: 24px
-    padding-left: 30px
     margin-top: 0
     margin-bottom: 0
   &__text
@@ -277,6 +276,7 @@ body
     margin: 27px
   &__navigation
     margin-top: 65px
+    margin-bottom: 50px
   &__li
     display: inline
     color: #999999
@@ -343,3 +343,68 @@ body
     height: 5px
     background: white
     margin-bottom: 30px
+
+
+//БЛОК CaseStudy
+.caseStudy
+  background-color: #f4f5f9
+  min-height: 1190px
+  text-align: center  
+  padding-top: 150px
+  box-sizing: border-box
+  &__content
+    width: 670px
+    height: 630px
+    background-color: white
+    padding-top: 85px
+    display: inline-block
+    position: relative
+    z-index: 1
+    box-sizing: border-box
+    top: -172px
+    &Romb
+      width: 70px
+      height: 70px
+      background: #e74c3c
+      transform: rotate(45deg)
+      margin-left: auto
+      margin-right: auto
+      &:after
+        content: ''
+        display: block
+        background: url(../images/lamp.png) no-repeat center
+        width: 100%
+        height: 100%
+        transform: rotate(-45deg)
+    &Header
+      text-transform: uppercase
+      color: #6a6a6a
+      padding-top: 50px
+    &Paragraph
+      max-width: 500px
+      margin-left: auto
+      margin-right: auto
+      line-height: 25px
+    &Button
+      margin-right: 0
+      margin-top: 50px
+  &__image
+    width: 580px
+    height: 720px
+    background: url(../images/caseStudy.png)
+    display: inline-block
+    position: relative
+    z-index: 0
+    margin-left: -95px
+    margin-top: 70px
+
+.decorationLine
+  width: 40px
+  height: 1px
+  background-color: #888888
+  margin-left: auto
+  margin-right: auto
+  margin-top: 30px
+  margin-bottom: 30px
+
+
