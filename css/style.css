@@ -598,6 +598,100 @@ body {
   font-size: 20px;
 }
 
+.pricing {
+  min-height: 1070px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 157px;
+}
+
+.pricing__card {
+  width: 380px;
+  height: 610px;
+  background-color: #f4f5f9;
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-top: 70px;
+}
+
+.pricing__cardTop {
+  height: 200px;
+  background-color: #999999;
+  padding-top: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.pricing__cardTopHeader {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+}
+
+.pricing__cardCircle {
+  border-radius: 50%;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  margin-left: -77px;
+}
+
+.pricing__cardCirclePrice {
+  display: block;
+  color: #999999;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.pricing__cardCircleMonth {
+  color: #999999;
+  font-weight: bold;
+}
+
+.pricing__cardBottom > ul > li {
+  list-style: none;
+  color: #999999;
+  margin-bottom: 25px;
+}
+
+.pricing__cardBottom > ul {
+  padding-left: 0;
+}
+
+.pricing__cardBottom {
+  padding-top: 125px;
+}
+
+.pricing__cardBottomButton {
+  margin-right: 0;
+  background-color: #999999;
+  text-transform: uppercase;
+  width: 145px;
+  margin-top: 7px;
+}
+
+.pricingCards {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__card:hover .pricing__cardTop {
+  background-color: #e74c3c;
+}
+
+.pricing__card:hover .pricing__cardCirclePrice {
+  color: #e74c3c;
+}
+
+.pricing__card:hover .pricing__cardBottomButton {
+  background-color: #e74c3c;
+}
+
 .owl-carousel {
   text-align: center;
   padding-top: 180px;
