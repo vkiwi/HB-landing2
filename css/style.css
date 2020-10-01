@@ -692,6 +692,29 @@ body {
   background-color: #e74c3c;
 }
 
+.ourTeam {
+  box-sizing: border-box;
+  min-height: 740px;
+  background: url(../images/team.png);
+  padding-top: 150px;
+}
+
+.ourTeam__header {
+  color: white;
+}
+
+.ourTeam__text {
+  color: white;
+}
+
+.decorationOurTeam:before {
+  background-color: white;
+}
+
+.decorationOurTeam:after {
+  background-color: white;
+}
+
 .owl-carousel {
   text-align: center;
   padding-top: 180px;
