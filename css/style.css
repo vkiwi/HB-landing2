@@ -603,6 +603,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   padding-top: 157px;
+  padding-bottom: 140px;
 }
 
 .pricing__card {
@@ -695,8 +696,9 @@ body {
 .ourTeam {
   box-sizing: border-box;
   min-height: 740px;
-  background: url(../images/team.png);
+  background: url(../images/shape.png) no-repeat 100% 100%, url(../images/team.png) no-repeat center;
   padding-top: 150px;
+  text-align: center;
 }
 
 .ourTeam__header {
@@ -705,6 +707,43 @@ body {
 
 .ourTeam__text {
   color: white;
+}
+
+.ourTeam__membersMember {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #e74c3c;
+}
+
+.ourTeam__membersMember1 {
+  margin-top: 52px;
+  background: url(../images/members/1.png);
+}
+
+.ourTeam__membersMember2 {
+  background: url(../images/members/2.png);
+}
+
+.ourTeam__membersMember3 {
+  background: url(../images/members/3.png);
+}
+
+.ourTeam__membersMember4 {
+  margin-top: 38px;
+  background: url(../images/members/4.png);
+}
+
+.ourTeam__membersMember5 {
+  margin-top: -10px;
+  background: url(../images/members/5.png);
+}
+
+.ourTeam__mebmers {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 133px;
 }
 
 .decorationOurTeam:before {
