@@ -754,6 +754,36 @@ body {
   background-color: white;
 }
 
+.ourTeam__membersUnitText {
+  margin-left: -38px;
+  display: none;
+}
+
+.ourTeam__membersUnitTextLine {
+  height: 50px;
+  width: 1px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourTeam__membersUnitTextName {
+  color: #e74c3c;
+  font-size: 30px;
+  margin-top: 25px;
+  display: block;
+}
+
+.ourTeam__membersUnitTextPosition {
+  display: block;
+  color: white;
+  margin-top: 20px;
+}
+
+.ourTeam__membersUnit:hover .ourTeam__membersUnitText {
+  display: block;
+}
+
 .owl-carousel {
   text-align: center;
   padding-top: 180px;
