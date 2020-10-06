@@ -855,11 +855,12 @@ body {
 }
 
 .blog {
-  min-height: 1250px;
+  min-height: 1243px;
   border-top: 1px solid #d8d9db;
   background-color: #f4f5f9;
   text-align: center;
   padding-top: 115px;
+  box-sizing: border-box;
 }
 
 .blog__items {
@@ -925,6 +926,13 @@ body {
 
 .blog__item8 {
   background: url(../images/blog/4.png);
+}
+
+.keepInTouch {
+  min-height: 1030px;
+  background-color: #f4f5f9;
+  text-align: center;
+  padding-top: 150px;
 }
 
 .owl-carousel {
