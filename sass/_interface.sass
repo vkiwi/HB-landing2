@@ -1,12 +1,13 @@
 body
   margin: 0
   box-sizing: border-box
+  font-family: OpenSans
   
 .welcome
   width: 100%
   height: 990px
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/Foreground.png')
-  background-size: 100%
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.png')
+  background-size: 100% 100%
   &:after
     content: ''
     border-bottom: 128px solid white
@@ -38,6 +39,7 @@ body
     height: 55px
     color: white
     border-radius: 4px
+    font-family: OpenSans
     &:hover
       cursor: pointer
   &__button1
@@ -59,6 +61,7 @@ body
   text-transform: uppercase
   margin-left: 60px
   padding-bottom: 20px
+  font-family: OpenSans
   &:hover
     color: red
     border-bottom: 1px solid red
@@ -124,14 +127,13 @@ body
   display: flex
   justify-content: space-around
   padding-top: 120px
-
   &__item
     text-align: center
-
   &__itemName
     text-transform: uppercase
     color: grey
     font-size: 20px
+    font-family: OpenSans-Bold
   &__itemDecoration
     width: 45px
     height: 2px
@@ -139,6 +141,7 @@ body
     margin: 17px auto
   &__itemText
     max-width: 250px
+    font-family: OpenSans-Light
   &__itemImage
     width: 70px
     height: 70px
@@ -158,7 +161,7 @@ body
       height: 30px
       background-repeat: no-repeat
       background-position: center
-      margin: 23px auto
+      margin: 21px auto
 
 
 .advantages__itemImage:hover
@@ -196,8 +199,11 @@ body
       border-left: 6px solid #e74c3c
       padding-left: 30px
       margin-top: 0
+      font-family: OpenSans-Bold
+      letter-spacing: 3px
     &Text
       line-height: 30px
+      font-family: OpenSans
     &Button
       margin-top: 50px
     
@@ -226,6 +232,8 @@ body
       padding-right: 30px
       font-size: 27px
       margin-bottom: 70px
+      font-family: OpenSans-Bold
+      letter-spacing: 3px
     &Item:after
       content: ''
       display: inline-block
@@ -270,6 +278,8 @@ body
     font-size: 24px
     margin-top: 0
     margin-bottom: 0
+    font-family: OpenSans-Bold
+    letter-spacing: 3px
   &__text
     color: #999999
     display: block
@@ -380,11 +390,13 @@ body
       text-transform: uppercase
       color: #6a6a6a
       padding-top: 50px
+      font-family: OpenSans-Bold
     &Paragraph
       max-width: 500px
       margin-left: auto
       margin-right: auto
       line-height: 25px
+      font-family: OpenSans-Light
     &Button
       margin-right: 0
       margin-top: 50px
@@ -444,9 +456,11 @@ body
     margin-bottom: 17px
     font-weight: bold
     font-size: 25px
+    font-family: OpenSans-Bold
   &__itemValue
     color: white
     font-size: 20px
+    font-family: OpenSans-Light
 
 //БЛОК Our Pricing
 .pricing
@@ -496,7 +510,7 @@ body
 .pricing__cardBottom > ul > li
   list-style: none
   color: #999999
-  margin-bottom: 25px
+  margin-bottom: 20px
 
 .pricing__cardBottom > ul
   padding-left: 0
@@ -508,7 +522,8 @@ body
     background-color: #999999
     text-transform: uppercase
     width: 145px
-    margin-top: 7px
+    height: 50px
+    margin-top: 13px
 
 .pricingCards
   display: flex
@@ -544,19 +559,21 @@ body
       background: url(../images/members/1.png)
     &2
       background: url(../images/members/2.png)
+      margin-top: 5px
     &3
       background: url(../images/members/3.png)
+      margin-top: -3px
     &4
       margin-top: 38px
       background: url(../images/members/4.png)
     &5
-      margin-top: 10px
+      margin-top: 14px
       background: url(../images/members/5.png)
 
 .ourTeam__mebmers
   display: flex
   justify-content: space-between
-  padding-top: 133px
+  padding-top: 118px
 
 .decorationOurTeam
   &:before
@@ -566,6 +583,7 @@ body
 
 .ourTeam__membersUnit
   min-width: 130px
+  max-height: 55px
 .ourTeam__membersUnitText
   margin-left: -75px
   display: none
@@ -595,6 +613,8 @@ body
   background-color: #f4f5f9
   text-align: center
   padding-top: 150px
+  &__header
+    letter-spacing: 1px
   &__cards
     display: flex
     flex-wrap: wrap
@@ -605,29 +625,18 @@ body
       background-color: #ffffff
       margin-right: 24px
       margin-bottom: 24px
+      position: relative
       &:hover
-        background-color: #e74e3e
-      &1
-        background: url(../images/integrations/1.png) center no-repeat #ffffff
-      &2
-        background: url(../images/integrations/2.png) center no-repeat #ffffff
-      &3
-        background: url(../images/integrations/3.png) center no-repeat #ffffff
-      &4
-        background: url(../images/integrations/4.png) center no-repeat #ffffff
-      &5
-        background: url(../images/integrations/5.png) center no-repeat #ffffff
-      &6
-        background: url(../images/integrations/6.png) center no-repeat #ffffff
-      &7
-        background: url(../images/integrations/7.png) center no-repeat #ffffff
-      &8
-        background: url(../images/integrations/8.png) center no-repeat #ffffff
-      &9
-        background: url(../images/integrations/9.png) center no-repeat #ffffff
-      &10
-        background: url(../images/integrations/10.png) center no-repeat #ffffff
-    
+        background: rgba(231, 78, 62, 0.8)
+
+.integrations__logo
+  position: absolute
+  margin: auto
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+
 //блок our blog
 .blog
   min-height: 1243px
@@ -671,10 +680,8 @@ body
         color: white
         text-decoration: none
         font-style: italic
-
     &1
       background: url(../images/blog/1.png)
-
     &3
       background: url(../images/blog/2.png)
     &6
@@ -682,9 +689,58 @@ body
     &8
       background: url(../images/blog/4.png)
 
+.blog__item2, .blog__item4, .blog__item5, .blog__item7
+  position: relative
+.blog__item2:before, .blog__item4:before
+  width: 50px
+  height: 50px
+  background-color: #e74e3e
+  content: ''
+  display: block
+  position: absolute
+  top: 50%
+  left: -25px
+  transform: rotate(45deg)
+
+.blog__item5:before, .blog__item7:before
+  width: 50px
+  height: 50px
+  background-color: #e74e3e
+  content: ''
+  display: block
+  position: absolute
+  top: 50%
+  right: -25px
+  transform: rotate(45deg)
+
 //блок keep in touch
 .keepInTouch
   min-height: 1030px
   background-color: #f4f5f9
   text-align: center
   padding-top: 150px
+  &__wrapper
+    display: flex
+    padding-top: 70px
+    box-sizing: border-box
+  &__contacts
+    min-width: 480px
+    min-height: 565px
+    background-color: white
+    margin-right: 30px
+    text-align: left
+    padding-left: 90px
+    padding-top: 70px
+    &-header
+      text-transform: uppercase
+      font-family: OpenSans-Semibold
+      font-size: 20px
+      color: #e9594a
+      margin-top: 56px
+      margin-bottom: 22px
+    &-value
+      color: #999999
+  &__form
+    min-width: 660px
+    min-height: 565px
+    background-color: white
