@@ -177,7 +177,7 @@
         <li class="recentWorks__li">animation</li><span class="recentWorks__liSpan">/</span>
         <li class="recentWorks__li">art</li><span class="recentWorks__liSpan">/</span>
         <li class="recentWorks__li">web design</li><span class="recentWorks__liSpan">/</span>
-        <li class="recentWorks__li">phtography</li><span class="recentWorks__liSpan">/</span>
+        <li class="recentWorks__li">photography</li><span class="recentWorks__liSpan">/</span>
         <li class="recentWorks__li">video</li>
       </ul>
 
@@ -518,16 +518,74 @@
             <h5 class="keepInTouch__contacts-header">email us</h5>
             <span class="keepInTouch__contacts-value">contactus@email.com</span>
           </div>
-          <div class="keepInTouch__form"></div>
+          <div class="keepInTouch__form">
+
+            <form action="" class="form js-form">
+              <div class="form__field">
+                <input name="name" class="form__input" placeholder="Name" required autocomplete="off"></input>
+              </div>
+              <div class="form__field">
+                <input name="email" class="form__input" placeholder="Email" required autocomplete="off"></input>
+              </div>
+              <div class="form__field">
+                <input name="phone" class="form__input js-input-phone" placeholder="Subject" required
+                  autocomplete="off"></input>
+              </div>
+
+              <div class="form__field">
+                <input name="comment" class="form__input form__inputComment" placeholder="Message" required
+                  autocomplete="off"></input>
+              </div>
+
+    
+    
+              <div class="form__buttons">
+                <div class="slider_button request_button">
+                  <button class="head__buttons head__button1 caseStudy__contentButton" href="">send message</button>
+                </div>
+              </div>
+    
+            </form>
+
+          </div>
+        </div>
       </div>
       
     </div>
 
+    <div class="start">
+      <div class="realContainer">
+        <h3 class="start__header">Let's Get Started Now. <b>It's FREE!</b></h3>
+        <span class="start__text">30 days free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No Catches.</span>
+        <button class="head__buttons head__button1 caseStudy__contentButton">start free trial</button>
+      </div>
+    </div>
 
   </main>
 
+  <footer class="footer">
+    <div class="realContainer footer__wrapper">
+      <div class="footer__socials">
+        <a href=""><img class="footer__socials-image" src="images/socials/facebook.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/twitter.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/rss.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/google plus.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/linkedin.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/skype.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/vimeo.png" alt=""></a>
+        <a href=""><img class="footer__socials-image" src="images/socials/tumblr.png" alt=""></a>
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__copyright-text">Kazi Erfan © All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+  <script src="common.js"></script>
   <script>
     $(document).ready(function () {
       $('.owl-carousel').owlCarousel({

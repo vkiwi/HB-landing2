@@ -719,6 +719,8 @@ body
   background-color: #f4f5f9
   text-align: center
   padding-top: 150px
+  padding-bottom: 150px
+  box-sizing: border-box
   &__wrapper
     display: flex
     padding-top: 70px
@@ -736,11 +738,90 @@ body
       font-family: OpenSans-Semibold
       font-size: 20px
       color: #e9594a
-      margin-top: 56px
       margin-bottom: 22px
     &-value
       color: #999999
+      display: block
+      margin-bottom: 90px
   &__form
     min-width: 660px
     min-height: 565px
     background-color: white
+
+//форма ввода данных
+.keepInTouch__form
+  padding: 95px
+  text-align: left
+  box-sizing: border-box
+.form__input
+  border: none
+  border-bottom: 1px solid #e5e5e5
+  height: 40px
+  margin-bottom: 20px
+  width: 95%
+
+.keepInTouch__contacts, .keepInTouch__form
+  box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2)
+
+.form__inputComment
+  padding-bottom: 90px
+
+.form__field
+  position: relative
+
+.form label.error 
+  color: red
+  display: block
+  position: absolute
+  top: 100%
+  margin-top: -24px
+  left: 0
+  right: 0
+
+input.error 
+  border: 2px solid red
+
+//блок lets start now
+.start
+  min-height: 480px
+  box-sizing: border-box
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footerBack.png) 100%
+  text-align: center
+  padding-top: 150px
+  color: white
+  &__header
+    font-family: OpenSans
+    font-size: 30px
+    margin-bottom: 10px
+    margin-top: 0
+  &__text
+    font-family: OpenSans-Light
+    display: block
+    margin-bottom: 20px
+
+  .start__header > b
+    font-family: OpenSans-Bold
+
+//футер
+footer
+  min-height: 90px
+  background-color: #202020
+
+.footer
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 90px
+  &__socials
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    min-width: 300px
+    &-image:hover
+      filter: hue-rotate(360deg)
+  &__copyright-text
+    color: #7b7b7b
+
+.footer__socials-image
+  filter: contrast(0.0)
