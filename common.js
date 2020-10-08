@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: RU (Russian; русский язык)
@@ -49,7 +51,6 @@ $.validator.addMethod('js-input-phone', function(value, element){
 // $('.form__select').select2({
 // 	appearance: none
 // });
-
 
       var button = $('#button');
       var modal = $('#modal');
@@ -119,6 +120,17 @@ $.validator.addMethod('js-input-phone', function(value, element){
                 selectList.slideUp(duration);
             }
         });
+    });
+
+    $('.slickSlider').slick({
+        vertical: true,
+        arrows: false,
+        dots: true
+    });
+
+    $('.slickForCase').slick({
+        arrows: false,
+        dots: true
     });
 
 });
