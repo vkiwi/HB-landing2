@@ -111,8 +111,7 @@ body
 .anchor
   width: 65px
   height: 65px
-  border-radius: 50%
-  background: url('../images/anchor.png') no-repeat center #f4f5f9
+  border-radius: 50% 
   margin: auto
   margin-top: -30px
   position: absolute
@@ -148,20 +147,14 @@ body
     border: 1px solid grey
     margin: auto
     margin-bottom: 30px
-    &1
-      background: url(../images/1.png)
-    &2
-      background: url(../images/2.png)
-    &3
-      background: url(../images/3.png)
-    &4
-      background: url(../images/4.png)
+    transition: linear 0.3s
     &1, &2, &3, &4
       width: 30px
       height: 30px
-      background-repeat: no-repeat
-      background-position: center
+      background-repeat: no-repeat !important
+      background-position: center !important
       margin: 21px auto
+      transition: linear 0.3s
 
 
 .advantages__itemImage:hover
@@ -266,6 +259,16 @@ body
     background: url(../images/tablet.png)
     background-position: right
 
+.services__contentImage
+  display: inline-block
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  background-color: #f4f5f9
+  position: absolute
+  top: -85px
+  left: 108px
+  background: url(../images/display.png) no-repeat center #f4f5f9
 
 //блок recent works
 .recentWorks
@@ -438,16 +441,6 @@ body
     height: 110px
     margin-right: auto
     margin-left: auto
-    &1
-      background: url(../images/progress/heart.png) no-repeat center
-    &2
-      background: url(../images/progress/note.png) no-repeat center
-    &3
-      background: url(../images/progress/like.png) no-repeat center
-    &4
-      background: url(../images/progress/star.png) no-repeat center
-    &5
-      background: url(../images/progress/marker.png) no-repeat center
   &__itemDigit
     color: white
     text-transform: uppercase
@@ -556,19 +549,14 @@ body
     border: 3px solid #e74c3c
     &1
       margin-top: 52px
-      background: url(../images/members/1.png)
     &2
-      background: url(../images/members/2.png)
       margin-top: 5px
     &3
-      background: url(../images/members/3.png)
       margin-top: -3px
     &4
       margin-top: 38px
-      background: url(../images/members/4.png)
     &5
       margin-top: 14px
-      background: url(../images/members/5.png)
 
 .ourTeam__mebmers
   display: flex

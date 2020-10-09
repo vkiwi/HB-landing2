@@ -137,7 +137,6 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background: url("../images/anchor.png") no-repeat center #f4f5f9;
   margin: auto;
   margin-top: -30px;
   position: absolute;
@@ -184,30 +183,16 @@ body {
   border: 1px solid grey;
   margin: auto;
   margin-bottom: 30px;
-}
-
-.advantages__itemImage1 {
-  background: url(../images/1.png);
-}
-
-.advantages__itemImage2 {
-  background: url(../images/2.png);
-}
-
-.advantages__itemImage3 {
-  background: url(../images/3.png);
-}
-
-.advantages__itemImage4 {
-  background: url(../images/4.png);
+  transition: linear 0.3s;
 }
 
 .advantages__itemImage1, .advantages__itemImage2, .advantages__itemImage3, .advantages__itemImage4 {
   width: 30px;
   height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   margin: 21px auto;
+  transition: linear 0.3s;
 }
 
 .advantages__itemImage:hover {
@@ -344,6 +329,18 @@ body {
   width: 46%;
   background: url(../images/tablet.png);
   background-position: right;
+}
+
+.services__contentImage {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #f4f5f9;
+  position: absolute;
+  top: -85px;
+  left: 108px;
+  background: url(../images/display.png) no-repeat center #f4f5f9;
 }
 
 .recentWorks {
@@ -577,26 +574,6 @@ body {
   margin-left: auto;
 }
 
-.progress__itemCircle1 {
-  background: url(../images/progress/heart.png) no-repeat center;
-}
-
-.progress__itemCircle2 {
-  background: url(../images/progress/note.png) no-repeat center;
-}
-
-.progress__itemCircle3 {
-  background: url(../images/progress/like.png) no-repeat center;
-}
-
-.progress__itemCircle4 {
-  background: url(../images/progress/star.png) no-repeat center;
-}
-
-.progress__itemCircle5 {
-  background: url(../images/progress/marker.png) no-repeat center;
-}
-
 .progress__itemDigit {
   color: white;
   text-transform: uppercase;
@@ -736,27 +713,22 @@ body {
 
 .ourTeam__membersMember1 {
   margin-top: 52px;
-  background: url(../images/members/1.png);
 }
 
 .ourTeam__membersMember2 {
-  background: url(../images/members/2.png);
   margin-top: 5px;
 }
 
 .ourTeam__membersMember3 {
-  background: url(../images/members/3.png);
   margin-top: -3px;
 }
 
 .ourTeam__membersMember4 {
   margin-top: 38px;
-  background: url(../images/members/4.png);
 }
 
 .ourTeam__membersMember5 {
   margin-top: 14px;
-  background: url(../images/members/5.png);
 }
 
 .ourTeam__mebmers {
