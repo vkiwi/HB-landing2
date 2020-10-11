@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-
-
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true
+      });
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: RU (Russian; русский язык)
