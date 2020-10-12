@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="css/burger.css">
+	<script src="burger.js"></script>
 
 </head>
 
@@ -23,7 +25,8 @@
         <div class="logo">
 
         </div>
-        <div class="navigation">
+
+        <!-- <div class="navigation">
           <ul>
             <li class="welcome__nav-item">home</li>
             <li class="welcome__nav-item">about us</li>
@@ -33,7 +36,35 @@
             <li class="welcome__nav-item">blog</li>
             <li class="welcome__nav-item">contact</li>
           </ul>
+        </div> -->
+
+        <div class="wrapperBurger navigation">
+          <!-- Меню гамбургер, при клике, развернутся пункты меню -->
+             <label class="menuBurger" for="menuCSS">
+             <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+               <g>
+                <title>background</title>
+                <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+               </g>
+               <g>
+                <title>Layer 1</title>
+                <path fill="white" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+               </g>
+              </svg>
+                   </label>
+             <input id="menuCSS" type="checkbox">
+             <ul class="menu clearfix">
+               <li><a class="welcome__nav-item item item1" href="#">home</a></li>
+               <li><a class="welcome__nav-item item" href="#">about us</a></li>
+               <li><a class="welcome__nav-item item" href="#">portfolio</a></li>
+               <li><a class="welcome__nav-item item" href="#">pricing</a></li>
+               <li><a class="welcome__nav-item item" href="#">team</a></li>
+               <li><a class="welcome__nav-item item" href="#">blog</a></li>
+               <li><a class="welcome__nav-item item" href="#">contact</a></li>
+  
+          
         </div>
+
       </div>
 
       <div class="container">
@@ -71,7 +102,9 @@
           <button class="head__buttons head__button-second">learn more</button>
         </div>
       </div>
-      <div class="anchor" style="background: url('../images/anchor.png') no-repeat center #f4f5f9"></div>
+      <div class="wrapper-anchor">
+        <div class="anchor" style="background: url('../images/anchor.png') no-repeat center #f4f5f9"></div>
+      </div>
     </div>
 
   </header>
@@ -656,8 +689,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="common.js"></script>
-
-
 
 </body>
 
