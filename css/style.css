@@ -1276,5 +1276,176 @@ footer {
   .slick-dots {
     left: 0%;
   }
+  .progress {
+    flex-wrap: wrap;
+    min-height: 710px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+  .progress__item {
+    width: 30%;
+  }
+  .pricing__card {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pricingCards {
+    flex-direction: column;
+  }
+  .ourTeam {
+    background: url(../images/team.png) no-repeat center;
+  }
+  .ourTeam__mebmers {
+    flex-direction: column;
+    padding-left: 10%;
+    padding-top: 70px;
+  }
+  .ourTeam__members-member1, .ourTeam__members-member2, .ourTeam__members-member3, .ourTeam__members-member4, .ourTeam__members-member5 {
+    margin-top: 0;
+  }
+  .ourTeam__members-unit {
+    margin-bottom: 20px;
+  }
+  .integrations__cards {
+    justify-content: center;
+  }
+  .integrations__cardsCard {
+    width: 31%;
+  }
+  .blog__item {
+    width: 50%;
+    background-size: cover;
+  }
+  .keepInTouch__wrapper {
+    flex-wrap: wrap;
+  }
+  .keepInTouch__contacts {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18px;
+    margin-bottom: 23px;
+  }
+  .keepInTouch__form {
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+  }
+  .request_button {
+    text-align: center;
+  }
+  .start__text {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1180px) {
+  .owl-next {
+    right: 15%;
+  }
+  .owl-prev {
+    left: 15%;
+  }
+  .container {
+    width: 768px;
+    margin-left: -384px;
+  }
+  .head {
+    width: 768px;
+    margin-left: -384px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 320px;
+    margin-left: -160px;
+  }
+  .owl-carousel {
+    padding-top: 0;
+  }
+  .head {
+    width: 320px;
+    margin-left: -160px;
+  }
+  .owl-next, .owl-prev {
+    display: none !important;
+  }
+  .head__buttons {
+    width: 42%;
+  }
+  .advantages {
+    max-width: 486px;
+  }
+  .advantages__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .history__image {
+    display: none;
+  }
+  .history__content-button {
+    position: initial;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+  }
+  .history {
+    padding-bottom: 25px;
+  }
+  .services__content {
+    width: auto;
+  }
+  .recentWorks__navigation {
+    display: none;
+  }
+  .recentsWorks__category {
+    display: block !important;
+    color: #999999;
+    margin: 27px;
+  }
+  .recentWorks__image {
+    width: 100%;
+  }
+  .caseStudy__content-romb {
+    display: none;
+  }
+  .caseStudy__content {
+    width: auto;
+  }
+  .progress__item {
+    width: 100%;
+    margin-bottom: 44px;
+  }
+  .progress__item-digit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .blog__item {
+    width: 100%;
+  }
+  .keepInTouch__contacts {
+    min-width: 320px;
+  }
+  .keepInTouch__form {
+    min-width: 320px;
+  }
+  .blog__item5:before, .blog__item7:before {
+    display: none;
+  }
+  .form__button {
+    width: 100%;
+  }
+  .start {
+    padding-top: 50px;
+    min-height: 350px;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
