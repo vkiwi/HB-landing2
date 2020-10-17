@@ -181,6 +181,8 @@ body {
   color: grey;
   font-size: 20px;
   font-family: OpenSans-Bold;
+  display: inline-block;
+  margin-top: 30px;
 }
 
 .advantages__item-decoration {
@@ -195,38 +197,39 @@ body {
   font-family: OpenSans-Light;
 }
 
-.advantages__item-image {
+.advantages__item-image-picture {
+  width: 30px;
+  height: 30px;
+  margin: 21px auto;
+  transition: linear 0.3s;
+  position: relative;
+}
+
+.advantages__item-image-picture:after {
+  content: '';
+  display: block;
   width: 70px;
   height: 70px;
   border: 1px solid grey;
   margin: auto;
   margin-bottom: 30px;
   transition: linear 0.3s;
+  position: absolute;
+  top: -22px;
+  left: -21px;
 }
 
-.advantages__item-image-picture {
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  margin: 21px auto;
-  transition: linear 0.3s;
-}
-
-.advantages__item-image:hover {
+.advantages__item-image-picture:hover {
   cursor: pointer;
+}
+
+.advantages__item-image-picture:hover:after {
   transform: rotate(45deg);
   border: 1px solid red;
 }
 
-.advantages__item-image:hover span.advantages__itemName {
+.advantages__item-image-picture:hover ~ .advantages__item-name {
   color: red;
-}
-
-.advantages__item-image:hover .advantages__item-image-picture {
-  transform: rotate(-45deg);
-  margin-left: 21px;
-  margin-top: 21px;
 }
 
 .advantages__item-image:hover ~ .advantages__item-name {
@@ -310,10 +313,22 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-color: #f4f5f9;
+  background: #f4f5f9;
   position: relative;
   top: -85px;
-  left: 108px;
+  left: -7px;
+}
+
+.services__content-item-web:after {
+  background: url(../images/display.png) no-repeat center #f4f5f9;
+}
+
+.services__content-item-print:after {
+  background: url(../images/docs.png) no-repeat center #f4f5f9;
+}
+
+.services__content-item-photo:after {
+  background: url(../images/camera.png) no-repeat center #f4f5f9;
 }
 
 .services__content-item-header {
@@ -322,6 +337,7 @@ body {
   font-size: 20px;
   margin-bottom: 23px;
   margin-top: 0px;
+  margin-right: 115px;
 }
 
 .services__content-item-text {
@@ -329,6 +345,7 @@ body {
   max-width: 560px;
   margin-left: auto;
   line-height: 30px;
+  margin-right: 115px;
 }
 
 .services__image {

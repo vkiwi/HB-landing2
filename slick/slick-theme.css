@@ -119,6 +119,15 @@
     margin-bottom: 30px;
 }
 
+.slickSlider
+{
+    margin-right: -115px;
+
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
 .slick-dots
 {
     position: absolute;

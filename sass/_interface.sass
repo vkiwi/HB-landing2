@@ -149,6 +149,8 @@ body
     color: grey
     font-size: 20px
     font-family: OpenSans-Bold
+    display: inline-block
+    margin-top: 30px
   &__item-decoration
     width: 45px
     height: 2px
@@ -157,32 +159,37 @@ body
   &__item-text
     max-width: 250px
     font-family: OpenSans-Light
-  &__item-image
-    width: 70px
-    height: 70px
-    border: 1px solid grey
-    margin: auto
-    margin-bottom: 30px
-    transition: linear 0.3s
-    &-picture
-      width: 30px
-      height: 30px
-      background-repeat: no-repeat !important
-      background-position: center !important
-      margin: 21px auto
-      transition: linear 0.3s
 
-.advantages__item-image:hover
+.advantages__item-image-picture
+  width: 30px
+  height: 30px
+  margin: 21px auto
+  transition: linear 0.3s
+  position: relative
+
+.advantages__item-image-picture:after
+  content: ''
+  display: block
+  width: 70px
+  height: 70px
+  border: 1px solid grey
+  margin: auto
+  margin-bottom: 30px
+  transition: linear 0.3s
+  position: absolute
+  top: -22px
+  left: -21px
+
+.advantages__item-image-picture:hover
   cursor: pointer
+  
+.advantages__item-image-picture:hover:after
   transform: rotate(45deg)
   border: 1px solid red
-  span.advantages__itemName
-    color: red
-  .advantages__item-image
-    &-picture
-      transform: rotate(-45deg)
-      margin-left: 21px
-      margin-top: 21px
+
+.advantages__item-image-picture:hover~.advantages__item-name
+  color: red
+
 
 .advantages__item-image:hover~.advantages__item-name
   color: red
@@ -248,27 +255,34 @@ body
       width: 65px
       height: 65px
       border-radius: 50%
-      background-color: #f4f5f9
+      background: #f4f5f9
       position: relative
       top: -85px
-      left: 108px
-    // &Item1:after
-    //   background: url(../images/display.png) no-repeat center #f4f5f9
-    // &Item2:after
-    //   background: url(../images/docs.png) no-repeat center #f4f5f9
-    // &Item3:after
-    //   background: url(../images/camera.png) no-repeat center #f4f5f9
+      left: -7px
+    &-item-web:after
+      background: url(../images/display.png) no-repeat center #f4f5f9
+    &-item-print:after
+      background: url(../images/docs.png) no-repeat center #f4f5f9
+    &-item-photo:after
+      background: url(../images/camera.png) no-repeat center #f4f5f9
+
+.slick-slide:active
+  outline: none !important
+  border: none !important
+
     &-item-header
       color: #e74c3c
       text-transform: uppercase
       font-size: 20px
       margin-bottom: 23px
       margin-top: 0px
+      margin-right: 115px
     &-item-text
       color: #999999
       max-width: 560px
       margin-left: auto
       line-height: 30px
+      margin-right: 115px
   &__image
     width: 46%
     background: url(../images/tablet.png)
