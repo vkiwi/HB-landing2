@@ -133,7 +133,37 @@ $.validator.addMethod('js-input-phone', function(value, element){
 
     $('.slickForCase').slick({
         arrows: false,
-        dots: true
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: '.slickForCase-second'
     });
+
+    $('.slickForCase-second').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slickForCase',
+        centerMode: true,
+        focusOnSelect: true
+    });
+
+    // $('.slickForCase').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     asNavFor: '.caseStudy__image'
+    //   });
+    //   $('.caseStudy__image').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.slickForCase',
+    //     dots: true,
+    //     centerMode: true,
+    //     focusOnSelect: true
+    //   });
 
 });
