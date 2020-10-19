@@ -166,4 +166,8 @@ $.validator.addMethod('js-input-phone', function(value, element){
     //     focusOnSelect: true
     //   });
 
+document.querySelector('.menu-icon-wrapper').onclick = function(){
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+}
+
 });

@@ -1,13 +1,21 @@
+html
+  scroll-behavior: smooth
+  
 body
   margin: 0
   box-sizing: border-box
   font-family: OpenSans
-  
+
+
+button:active, button:focus 
+  outline: none
+
+
 .welcome
   width: 100%
   height: 990px
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.png')
-  background-size: 100% 100%
+  background-size: cover
   &:after
     content: ''
     border-bottom: 128px solid white
@@ -27,12 +35,12 @@ body
 .head
   width: 1170px
   position: absolute
-  // border: 3px solid red
   left: 50%
   margin-left: -585px
   top: 40px
   display: flex
   justify-content: space-between
+  padding: 0 2%
   &__buttons
     text-transform: uppercase
     width: 220px
@@ -106,6 +114,12 @@ body
 .real-container
   max-width: 1170px
   margin: auto
+
+.owl-prev:hover, .owl-next:hover
+  transform: scale(1.1)
+
+.head__button-first:hover, .head__button-second:hover
+  background-color: #792921
 
 //блок преимущества advantages
 .anchor
@@ -380,9 +394,6 @@ body
     width: 475px
     height: 475px
 
-
-
-
 .recentWorks__image
   position: relative
   &:hover .recentWorks__hover-block
@@ -414,6 +425,8 @@ body
     height: 5px
     background: white
     margin-bottom: 30px
+
+
 
 //БЛОК CaseStudy
 .caseStudy
@@ -685,7 +698,8 @@ body
       margin-bottom: 24px
       position: relative
       &:hover
-        background: rgba(231, 78, 62, 0.8)
+        filter: contrast(0.7)
+
 
 .integrations__logo
   position: absolute
@@ -817,6 +831,8 @@ body
   height: 40px
   margin-bottom: 20px
   width: 95%
+  &:focus
+    outline: none
 
 .keepInTouch__contacts, .keepInTouch__form
   box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2)
@@ -835,6 +851,25 @@ body
   margin-top: -24px
   left: 0
   right: 0
+  font-size: 12px
+
+.form__field
+  display: block
+  vertical-align: top
+  position: relative
+
+.form__label
+  position: absolute
+  pointer-events: none
+  left: 15px
+  top: 0
+  line-height: 40px
+  transition: .3s
+ 
+.form__input:focus~.form__label,
+.form__input:not(:focus):valid~.form__label 
+  top: -15px
+  font-size: 10px
 
 input.error 
   border: 2px solid red
@@ -912,3 +947,9 @@ footer
 
 .slick-dots li.slick-active button:before
   color: #e74c3c
+
+a
+  text-decoration: none
+  color: #999999
+  &:hover
+    text-decoration: underline

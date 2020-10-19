@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/burger-button.css">
   <link rel="stylesheet" href="style2.css">
   <script src="burger.js"></script>
 
@@ -42,7 +43,10 @@
         <div class="wrapperBurger navigation">
           <!-- Меню гамбургер, при клике, развернутся пункты меню -->
           <label class="menuBurger" for="menuCSS">
-            <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <div class="menu-icon-wrapper">
+              <div class="menu-icon"></div>
+            </div>
+            <!-- <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <title>background</title>
                 <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1" />
@@ -52,7 +56,7 @@
                 <path fill="white" id="svg_1"
                   d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z" />
               </g>
-            </svg>
+            </svg> -->
           </label>
           <input id="menuCSS" type="checkbox">
           <ul class="menu clearfix">
@@ -104,7 +108,9 @@
         </div>
       </div>
       <div class="wrapper-anchor">
-        <div class="anchor" style="background: url('../images/anchor.png') no-repeat center #f4f5f9"></div>
+        <a href="#history">
+          <div class="anchor" style="background: url('../images/anchor.png') no-repeat center #f4f5f9"></div>
+        </a>
       </div>
     </div>
 
@@ -160,6 +166,7 @@
     <div class="greyLine"></div>
 
     <div class="real-container">
+      <a href="" name="history"></a></a>
       <div class="history">
         <div class="history__image"></div>
         <div class="history__content">
@@ -257,11 +264,13 @@
       <span class="recentsWorks__category" style="display: none">Category</span>
 
       <div class="recentWorks__wrapper">
-        <div class="recentWorks__image" style="background: url(../images/works/1.png)">
-          <div class="recentWorks__hover-block">
-            <span class="recentWorks__hover-block-span">t-shirt design</span>
-            <span class="recentWorks__hoverBlockSpan2">art / t-shirt</span>
-          </div>
+        
+          <div class="recentWorks__image" style="background: url(../images/works/1.png)">
+            <div class="recentWorks__hover-block">
+              <span class="recentWorks__hover-block-span">t-shirt design</span>
+              <span class="recentWorks__hoverBlockSpan2">art / t-shirt</span>
+            </div>
+     
         </div>
         <div class="recentWorks__image" style="background: url(../images/works/2.png)">
           <div class="recentWorks__hover-block">
@@ -538,34 +547,34 @@
       <div class="real-container">
         <div class="integrations__cards">
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/1.png" alt="">
+            <img class="integrations__logo" src="images/integrations/1.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/2.png" alt="">
+            <img class="integrations__logo" src="images/integrations/2.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/3.png" alt="">
+            <img class="integrations__logo" src="images/integrations/3.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/4.png" alt="">
+            <img class="integrations__logo" src="images/integrations/4.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/5.png" alt="">
+            <img class="integrations__logo" src="images/integrations/5.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/6.png" alt="">
+            <img class="integrations__logo" src="images/integrations/6.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/7.png" alt="">
+            <img class="integrations__logo" src="images/integrations/7.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/8.png" alt="">
+            <img class="integrations__logo" src="images/integrations/8.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/9.png" alt="">
+            <img class="integrations__logo" src="images/integrations/9.jpg" alt="">
           </div>
           <div class="integrations__cardsCard">
-            <img class="integrations__logo" src="images/integrations/10.png" alt="">
+            <img class="integrations__logo" src="images/integrations/10.jpg" alt="">
           </div>
         </div>
       </div>
@@ -635,28 +644,32 @@
             <h5 class="keepInTouch__contacts-header">our address</h5>
             <span class="keepInTouch__contacts-value">House #13, Streat road, Sydney<br> 2310 Austrlia</span>
             <h5 class="keepInTouch__contacts-header">call us</h5>
-            <span class="keepInTouch__contacts-value">+ 880 168 109 1425<br>+ 0216809142</span>
+            <span class="keepInTouch__contacts-value"><a href="tel:+ 880 168 109 1425">+ 880 168 109 1425</a><br><a href="tel:+ 0216809142">+ 0216809142</a></span>
             <h5 class="keepInTouch__contacts-header">email us</h5>
-            <span class="keepInTouch__contacts-value">contactus@email.com</span>
+            <span class="keepInTouch__contacts-value"><a href="mailto:contactus@email.com">contactus@email.com</a></span>
           </div>
           <div class="keepInTouch__form">
 
             <form action="" class="form js-form">
               <div class="form__field">
-                <input name="name" class="form__input" placeholder="Name" required autocomplete="off"></input>
+                <input name="name" class="form__input" required autocomplete="off"></input>
+                <label class="form__label" for="name">Имя</label>
               </div>
               <div class="form__field">
-                <input name="email" class="form__input" placeholder="Email" required autocomplete="off"></input>
+                <input name="email" class="form__input" required autocomplete="off"></input>
+                <label class="form__label" for="email">Email</label>
               </div>
               <div class="form__field">
-                <input name="phone" class="form__input js-input-phone" placeholder="Subject" required
+                <input name="phone" class="form__input js-input-phone" required
                   autocomplete="off"></input>
+                <label class="form__label" for="phone">phone</label>
               </div>
 
               <div class="form__field">
-                <input name="comment" class="form__input form__inputComment" placeholder="Message" required
+                <input name="comment" class="form__input form__inputComment" required
                   autocomplete="off"></input>
-              </div>
+                  <label class="form__label" for="comment">Message</label>
+                </div>
 
               <div class="form__buttons">
                 <div class="slider_button request_button">

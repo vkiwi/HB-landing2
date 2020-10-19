@@ -1,14 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: OpenSans;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+
 .welcome {
   width: 100%;
   height: 990px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background.png");
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .welcome:after {
@@ -38,6 +46,7 @@ body {
   top: 40px;
   display: flex;
   justify-content: space-between;
+  padding: 0 2%;
 }
 
 .head__buttons {
@@ -131,6 +140,14 @@ body {
 .real-container {
   max-width: 1170px;
   margin: auto;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  transform: scale(1.1);
+}
+
+.head__button-first:hover, .head__button-second:hover {
+  background-color: #792921;
 }
 
 .anchor {
@@ -863,7 +880,7 @@ body {
 }
 
 .integrations__cardsCard:hover {
-  background: rgba(231, 78, 62, 0.8);
+  filter: contrast(0.7);
 }
 
 .integrations__logo {
@@ -1036,6 +1053,10 @@ body {
   width: 95%;
 }
 
+.form__input:focus {
+  outline: none;
+}
+
 .keepInTouch__contacts, .keepInTouch__form {
   box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
@@ -1056,6 +1077,28 @@ body {
   margin-top: -24px;
   left: 0;
   right: 0;
+  font-size: 12px;
+}
+
+.form__field {
+  display: block;
+  vertical-align: top;
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 0;
+  line-height: 40px;
+  transition: .3s;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:focus):valid ~ .form__label {
+  top: -15px;
+  font-size: 10px;
 }
 
 input.error {
@@ -1151,6 +1194,15 @@ footer {
 
 .slick-dots li.slick-active button:before {
   color: #e74c3c;
+}
+
+a {
+  text-decoration: none;
+  color: #999999;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .owl-carousel {
@@ -1391,10 +1443,10 @@ footer {
 
 @media (max-width: 1180px) {
   .owl-next {
-    right: 15%;
+    right: 3%;
   }
   .owl-prev {
-    left: 15%;
+    left: 3%;
   }
   .container {
     width: 768px;
