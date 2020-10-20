@@ -145,6 +145,62 @@
     width: 768px
     margin-left: -384px
 
+  .super-wrapper-second
+    display: none
+
+  .caseStudy__content 
+    background-size: cover
+    background-image: url(../images/caseStudy-tablet.png)
+
+  .progress 
+    align-content: baseline
+
+  .progress__item 
+    text-align: center
+    margin-bottom: 25px
+
+@media (max-width: 1180px)
+  $finalHeight: 610px;
+  $finalWidth: 380px;
+  $scrollBarHeight: 1px;
+
+  .pricing
+    position: relative
+
+  ::-webkit-scrollbar 
+    width: $scrollBarHeight
+    height: $scrollBarHeight
+
+  ::-webkit-scrollbar-button 
+    width: $scrollBarHeight
+    height: $scrollBarHeight
+
+  .pricingCards
+    position: absolute
+    display: block
+    top: 30%
+    left: 0
+    width: calc(#{$finalHeight} + #{$scrollBarHeight})
+    max-height: $finalWidth
+    margin: 0
+    padding-top: $scrollBarHeight
+    overflow-y: auto
+    overflow-x: hidden
+    transform: rotate(-90deg) translateY(-$finalHeight)
+    transform-origin: right top
+    & > div 
+      display: block
+      padding: 5px
+      transform: rotate(90deg)
+      transform-origin: right top
+
+  .squares 
+    padding: $finalHeight 0 0 0
+    & > div 
+      width: $finalHeight
+      height: $finalHeight
+      margin: 10px 0
+
 @media (max-width: 767px)
   .container 
     width: 320px
