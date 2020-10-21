@@ -60,13 +60,13 @@
           </label>
           <input id="menuCSS" type="checkbox">
           <ul class="menu clearfix">
-            <li><a class="welcome__nav-item item item1" href="#">home</a></li>
-            <li><a class="welcome__nav-item item" href="#">about us</a></li>
-            <li><a class="welcome__nav-item item" href="#">portfolio</a></li>
-            <li><a class="welcome__nav-item item" href="#">pricing</a></li>
-            <li><a class="welcome__nav-item item" href="#">team</a></li>
-            <li><a class="welcome__nav-item item" href="#">blog</a></li>
-            <li><a class="welcome__nav-item item" href="#">contact</a></li>
+            <li><a class="welcome__nav-item item item1" href="#anchor">home</a></li>
+            <li><a class="welcome__nav-item item" href="#services">about us</a></li>
+            <li><a class="welcome__nav-item item" href="#recentWorks">portfolio</a></li>
+            <li><a class="welcome__nav-item item" href="#pricing">pricing</a></li>
+            <li><a class="welcome__nav-item item" href="#team">team</a></li>
+            <li><a class="welcome__nav-item item" href="#blog">blog</a></li>
+            <li><a class="welcome__nav-item item" href="#contact">contact</a></li>
 
         </div>
 
@@ -107,13 +107,17 @@
           <button class="head__buttons head__button-second">learn more</button>
         </div>
       </div>
+      
       <div class="wrapper-anchor">
+        
         <a href="#history">
           <div class="anchor" style="background: url('../images/anchor.png') no-repeat center #f4f5f9"></div>
         </a>
+        
       </div>
+      
     </div>
-
+    <a href="" name="anchor"></a>
   </header>
 
   <main>
@@ -166,7 +170,7 @@
     <div class="greyLine"></div>
 
     <div class="real-container">
-      <a href="" name="history"></a></a>
+      <a href="" name="history"></a>
       <div class="history">
         <div class="history__image"></div>
         <div class="history__content">
@@ -183,6 +187,7 @@
       </div>
     </div>
 
+    <a href="" name="services"></a>
     <div class="services">
       <div class="services__content">
         <h3 class="services__content-header">our services</h3>
@@ -246,6 +251,7 @@
       </div>
     </div>
 
+    <a href="" name="recentWorks"></a>
     <div class="recentWorks">
       <h3 class="recentWorks__header">recent works</h3>
       <span class="recentWorks__text">It has survided not only five centuries, but also the leap scrambped it to make a
@@ -402,6 +408,7 @@
       </div>
     </div>
 
+    <a href="" name="pricing"></a>
     <div class="pricing">
       <h3 class="recentWorks__header">our pricing</h3>
       <span class="recentWorks__text">A 30 days tril for all. A brief story about how this process works, keep an eye
@@ -475,6 +482,7 @@
 
     </div>
 
+    <a href="" name="team"></a>
     <div class="ourTeam">
       <h3 class="recentWorks__header ourTeam__header">our team</h3>
       <span class="recentWorks__text ourTeam__text">Meet the craziest tem. Share your thoughts with them.</span>
@@ -580,6 +588,7 @@
       </div>
     </div>
 
+    <a href="" name="blog"></a>
     <div class="blog">
       <h3 class="recentWorks__header">our blog</h3>
       <span class="recentWorks__text">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet
@@ -633,6 +642,7 @@
       </div>
     </div>
 
+    <a href="" name="contact"></a>
     <div class="keepInTouch">
       <h3 class="recentWorks__header">keep in touch</h3>
       <span class="recentWorks__text">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urn suscipit,
@@ -656,7 +666,7 @@
                 <label class="form__label" for="name">Имя</label>
               </div>
               <div class="form__field">
-                <input name="email" class="form__input" required autocomplete="off"></input>
+                <input type="email" name="email" class="form__input" required autocomplete="off"></input>
                 <label class="form__label" for="email">Email</label>
               </div>
               <div class="form__field">
